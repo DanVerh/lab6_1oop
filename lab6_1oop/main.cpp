@@ -26,7 +26,10 @@ int main()
     cout << c;
     
     cout << "New array += sum and average" << endl;
-    c.SumAverage();
+    double s = c.sum();
+    c.push_back(s);
+    double b = c.avg();
+    c.push_back(b);
     cout << c;
     
     cout << "New array /= halfsum of first negative and 50 element" << endl;

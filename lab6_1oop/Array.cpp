@@ -168,22 +168,15 @@ Array::value_type Array::sum()
     return sum;
 }
 
-Array::value_type Array::average()
+Array::value_type Array::avg()
 {
     value_type sum = 0;
     for (size_t i = 0; i < Count; i++)
         sum += elems[i];
-    double average = sum/Count;
-    return abs(average);
+    double avg = sum/Count;
+    return abs(avg);
 }
 
-void Array::SumAverage()
-{
-    double int_sum = sum();
-    double int_average = average();
-    for (int i = 0; i < Count; i++)
-        elems[i] += int_sum + int_average;
-}
 
 void Array::NegativeHalfsumFifty()
 {

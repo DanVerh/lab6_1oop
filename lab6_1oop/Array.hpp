@@ -59,7 +59,6 @@ public:
     friend istream& operator >>(istream& in, Array& a);
 
     value_type sum();
-    value_type average();
-    void SumAverage();
+    value_type avg();
     void NegativeHalfsumFifty();
 };
